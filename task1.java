@@ -1,15 +1,11 @@
-
-/**
- Oleg Chaichenko
- */
+import java.util.Scanner;
 public class task1 {
-    static int Int;
-    static char Char;
-    static String String;
     public static void main(String[] args) {
-        System.out.println("Uninitialized int: " + Int);
-        System.out.println("Uninitialized char: " + Char);
-        System.out.println("Uninitialized String: " + String);
+        Scanner scan = new Scanner(System.in);
 
+        System.out.print("Введіть прізвище: ");
+        String surname = scan.nextLine();
+
+        System.out.println("Привіт, " + surname);
     }
 }
